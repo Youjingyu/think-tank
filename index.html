@@ -26,7 +26,21 @@
         recalc();
     })(document, window);
 </script>
-<div>
+<div class="header">
+    <div class="header-top clearfix">
+        <img src="img/logo.png" class="header-logo">
+        <div class="header-right">
+            <div class="header-sign">
+                <a id="login">登录</a>&nbsp;&nbsp;
+                <a>注册</a>
+            </div>
+            <div class="header-search">
+                <input placeholder="请输入您要查询的文字.."><button class="header-search-off"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-container" id="login_modal">
     <div class="modal">
         <div class="modal-content">
             <div class="modal-login">
@@ -82,6 +96,14 @@
                 }
             }
         }
+        $('#login').on('click', function () {
+            $('#login_modal').show();
+        })
+        $('#login_modal').on('click', function (event) {
+            if(/^modal$/.test(event.target.className)){
+                $(this).hide();
+            }
+        })
     })
 </script>
 </body>

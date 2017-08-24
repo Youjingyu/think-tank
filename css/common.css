@@ -23,6 +23,9 @@ input:focus{
     clear: both;
 }
 
+.modal-container{
+    display: none;
+}
 .mask{
     position: fixed;
     top: 0;
@@ -44,6 +47,7 @@ input:focus{
 }
 .modal-content{
     margin: 100px auto 0;
+    width: 6.9rem;
 }
 
 .modal-login{
@@ -130,4 +134,49 @@ input:focus{
     border-top: 1px solid #ccc;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.header-top{
+    margin: 0 auto;
+    width: 10.24rem;
+}
+.header-logo{
+    float: left;
+    margin: 0.24rem 0 0.3rem 0.09rem;
+    width: 2.43rem;
+    height: 0.71rem;
+}
+.header-right{
+    float: right;
+    margin: 0.28rem 0.09rem 0 0;
+}
+.header-sign{
+    text-align: right;
+    color: #999;
+    cursor: pointer;
+}
+.header-search{
+    margin-top: 0.1rem;
+}
+.header-search > input{
+    height: 0.358rem;
+    width: 1.95rem;
+    border: none;
+    vertical-align: middle;
+    text-indent: 0.14rem;
+    background: url("../img/search_input.png") no-repeat;
+    background-size: 100% 100%;
+}
+.header-search > button{
+    height: 0.358rem;
+    width: 0.447rem;
+    border: none;
+    vertical-align: middle;
+    background-size: 100% 100%;
+}
+.header-search-off{
+    background: url("../img/search_off.png") no-repeat;
+}
+.header-search-on{
+    background: url("../img/search_on.png") no-repeat;
 }
