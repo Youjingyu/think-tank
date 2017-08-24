@@ -1,3 +1,18 @@
+body{
+    font-size: 0.16rem;
+    font-family: "Microsoft Yahei";
+}
+div, form, input{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: none;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -6,4 +21,113 @@
 
 .clearfix:after {
     clear: both;
+}
+
+.mask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+.modal{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.modal-content{
+    margin: 100px auto 0;
+}
+
+.modal-login{
+    position: relative;
+    margin: 0 auto;
+    width: 6.9rem;
+    height: 4.4rem;
+    background: url("../img/login_box_bg.png") no-repeat;
+    background-size: 100% 100%;
+    /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/login_box_bg.png',sizingMethod='scale');*/
+}
+.login{
+    position: absolute;
+    left: 3.8rem;
+    top: -0.2rem;
+    width: 2.9rem;
+    background-color: #fff;
+    border-radius: 5px;
+    /*background: url("../img/login_box_left.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+}
+.login-form{
+    padding: 0 0.25rem;
+}
+.login-form > * {
+    height: 0.4rem;
+    margin-top: 0.2rem;
+}
+.login-form > h3{
+    margin: 0.3rem 0 0 0;
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center
+}
+.login-form > input{
+    width: 2.4rem;
+    padding-left: 0.4rem;
+    line-height: 0.4rem;
+    border: none;
+    background-size: 100% 100%;
+}
+.login-form > .login-user{
+    margin-top: 0.1rem;
+}
+.login-user{
+    background: url("../img/login_user.png") no-repeat;
+    /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/login_user.png',sizingMethod='scale');*/
+}
+.login-pwd{
+    background: url("../img/login_pasw.png") no-repeat;
+}
+.login-valid-num{
+    background: url("../img/login_rpasw.png") no-repeat;
+}
+.login-valid-img{
+    display: inline-block;
+    width: 1.18rem;
+    height: 100%;
+}
+.login-change-valid-num{
+    color: #0099ff;
+}
+.login-sign{
+    float: right;
+    cursor: pointer;
+}
+.login-submit{
+    width: 2.4rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    color: #333;
+}
+.login-submit:hover{
+    background-color: #ffcc33;
+}
+.login > h4{
+    margin-bottom: 0;
+    color: #999;
+    line-height: 0.4rem;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-top: 1px solid #ccc;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
