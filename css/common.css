@@ -1,8 +1,9 @@
 body{
+    min-width: 1024px;
     font-size: 0.16rem;
     font-family: "Microsoft Yahei";
 }
-div, form, input{
+div, form, input, li{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -160,6 +161,7 @@ input:focus{
 }
 .header-search > input{
     height: 0.358rem;
+    line-height: 0.358rem;
     width: 1.95rem;
     border: none;
     vertical-align: middle;
@@ -179,4 +181,30 @@ input:focus{
 }
 .header-search-on{
     background: url("../img/search_on.png") no-repeat;
+}
+.header-nav-container{
+    background-color: #17a43b;
+}
+.header-nav{
+    margin: 0 auto;
+    width: 10.24rem;
+}
+.header-nav-list{
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+.header-nav-item{
+    float: left;
+    width: 14.2587%;
+    height: 0.536rem;
+    border-right: 1px solid #33cc66;
+    line-height: 0.536rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-size: 0.18rem;
+}
+.header-nav-item-active{
+    background-color: #33cc66;
 }
