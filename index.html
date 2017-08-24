@@ -122,6 +122,14 @@
         <i class="investor-right" id="investor_right"></i>
     </div>
 </div>
+
+<div class="investor">
+    <div class="investor-header">
+        投资方展示
+        <a class="investor-news-more">更多+</a>
+    </div>
+</div>
+
 <div class="modal-container" id="login_modal">
     <div class="modal">
         <div class="modal-content">
@@ -188,22 +196,21 @@
         })
         $('#investor_left').on('click', function () {
             var $investor_banner = $('#investor_banner');
-            var item_width = 2.4 * pxToint(document.documentElement.style.fontSize);
-            var cur_margin = pxToint($investor_banner.css('margin-left'));
+            var item_width = 2.4 * pxToInt(document.documentElement.style.fontSize);
+            var cur_margin = pxToInt($investor_banner.css('margin-left'));
             if(cur_margin < 0){
                 $investor_banner.css('margin-left', (cur_margin + item_width) + 'px');
             }
         });
         $('#investor_right').on('click', function () {
             var $investor_banner = $('#investor_banner');
-            var item_width = 2.4 * pxToint(document.documentElement.style.fontSize);
-            var cur_margin = pxToint($investor_banner.css('margin-left'));
-            debugger
-            if((0 - cur_margin) < $('.investor-item').length * item_width){
+            var item_width = 2.4 * pxToInt(document.documentElement.style.fontSize);
+            var cur_margin = pxToInt($investor_banner.css('margin-left'));
+            if((0 - cur_margin) < ($('.investor-item').length - 3) * item_width){
                 $investor_banner.css('margin-left', (cur_margin - item_width) + 'px');
             }
         });
-        function pxToint(px) {
+        function pxToInt(px) {
             return parseFloat(px.replace('px', ''));
         }
     })
