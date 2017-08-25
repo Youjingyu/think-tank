@@ -1,0 +1,53 @@
+.container{
+    width: 10.24rem;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.title{
+    margin: 0 0.4rem;
+    padding-bottom: 0.14rem;
+    border-bottom: 1px solid #999;
+}
+.title h1{
+    margin: 0.4rem 0 0.14rem;
+    text-align: center;
+}
+.title div{
+    font-size: 0.12rem;
+    text-align: center;
+}
+.title img{
+    width: 0.218rem;
+    height: 0.116rem;
+    vertical-align: middle;
+}
+.news-info{
+    margin: 0.4rem 0 0 0.8rem;
+    color: #999;
+}
+.new-img{
+    margin-top: 0.2rem;
+    text-align: center;
+}
+.new-img img{
+    width: 6.387rem;
+    height: 4.749rem;
+}
+.news-word{
+    margin: 0.2rem 0.8rem 0.4rem;
+    text-align: justify;
+    text-indent: 2em;
+    color: #333;
+}
+.join-in{
+    margin-bottom: 0.35rem;
+    text-align: center;
+}
+.join-in button{
+    width: 1.6rem;
+    height: 0.45rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc33;
+    color: #333;
+}

@@ -24,9 +24,13 @@ ul, p{
     content: " ";
     display: table;
 }
-
 .clearfix:after {
     clear: both;
+}
+
+.container{
+    width: 10.24rem;
+    margin: 0 auto;
 }
 
 .modal-container{
@@ -272,9 +276,4 @@ ul, p{
     text-align: center;
     font-size: 0.14rem;
     line-height: 200%;
-}
-
-.container{
-    width: 10.24rem;
-    margin: 0 auto;
 }
