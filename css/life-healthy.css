@@ -1,0 +1,76 @@
+.life-container{
+    margin: 0 auto;
+    width: 10.24rem;
+}
+.life-main{
+    float: left;
+    padding: 0 0.2rem;
+    width: 7.84rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.life-adv{
+    float: right;
+    width: 2.18rem;
+}
+.life-adv img{
+    width: 100%;
+    height: 1.487rem;
+}
+.life-config{
+    padding: 0.2rem 0;
+    border-bottom: 1px dashed #ccc;
+}
+.life-config > * {
+    margin-left: 0.2rem;
+}
+.life-config > *:first-child {
+    margin-left: 0;
+}
+.life-config > span{
+    display: inline-block;
+    width: 0.92rem;
+    height: 0.44rem;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: #999;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 0.44rem;
+}
+.life-config-item{
+    display: inline-block;
+}
+.life-config-item input{
+    margin-right: 0.09rem;
+    vertical-align: middle;
+}
+.life-config-item label{
+    vertical-align: middle;
+}
+.life-list{
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    color: #999;
+}
+.life-list{
+    margin-top: 0.2rem;
+}
+.life-list h4{
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.18rem;
+}
+.life-list p{
+    margin: 0.14rem 0 0.2rem;
+}
+.life-list-money{
+    color: #ff3333;
+}
+.life-list-time{
+    color: #3399ff;
+}
+.life-main > .page{
+    margin-top: 0.24rem;
+}
