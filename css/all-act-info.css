@@ -1,0 +1,36 @@
+.act-info-table{
+    margin: 0.4rem 0.2rem;
+    padding-bottom: 0.5rem;
+    border-spacing: 0.49rem 0.1rem;
+    color: #999;
+}
+.act-info-table tr{
+    margin-bottom: 0.4rem;
+}
+.act-info-table td{
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+}
+.act-info-table td:hover{
+    border-color: #33cc66;
+}
+.act-info-table .act-info-td-right{
+    margin-left: 0.4rem;
+}
+.act-info-table h4{
+    margin: 0;
+    color: #333;
+    font-size: 0.18rem;
+    font-weight: bold;
+}
+.act-info-table .act-info-time{
+    margin: 0.13rem 0 0.26rem;
+}
+.act-info-table .act-info-from{
+    font-size: 0.12rem;
+}
+.act-info-table .act-info-from img{
+    width: 0.218rem;
+    height: 0.116rem;
+    vertical-align: middle;
+}
