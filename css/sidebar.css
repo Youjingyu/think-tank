@@ -15,6 +15,10 @@
     border-bottom: 1px solid #ccc;
 
 }
+.sidebar li:hover{
+    color: #fff;
+    background-color: #33cc66;
+}
 .sidebar a {
     display: inline-block;
     width: 100%;

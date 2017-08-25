@@ -1,0 +1,25 @@
+.content{
+    float: right;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.act-info{
+    margin: 0 0.2rem;
+    padding-bottom: 0.04rem;
+    border-bottom: 1px dashed #ccc;
+}
+.act-info caption{
+    color: #333;
+    font-weight: bold;
+    font-size: 0.18rem;
+    line-height: 0.45rem;
+}
+.act-info tr{
+    padding-bottom: 0.14rem;
+}
+.act-info tr span{
+    color: #999;
+}
+.td-right{
+    padding-left: 0.3rem;
+}
