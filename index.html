@@ -5,17 +5,20 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+    <link rel="stylesheet" type="text/css" href="css/question.css">
 </head>
 <body>
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,
-            //resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            recalc = function () {
-                var clientWidth = docEl.clientWidth;
-                if (!clientWidth || clientWidth < 1024) return;
-                docEl.style.fontSize = clientWidth * (100 / 1920) + 'px';
-            };
+        //resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth || clientWidth < 1024) return;
+                    docEl.style.fontSize = clientWidth * (100 / 1920) + 'px';
+                };
         if (doc.addEventListener){
             win.addEventListener('resize', recalc, false);
             //doc.addEventListener('DOMContentLoaded', recalc, false);
@@ -54,79 +57,28 @@
     </div>
 </div>
 
-<div class="banner">
-    <img src="img/banner.png">
-</div>
+<div id="content"></div>
 
-<div class="info clearfix">
-    <div class="info-num">
-        <div>
-            <i class="info-icon info-num-icon"></i>
-            <div class="info-detail">
-                <span class="info-item-num">2148</span><br>
-                <span class="info-item-name">项目数量</span>
+<div class="footer">
+    <div class="footer-row1">
+        <div class="account">
+            <i class="tel1"></i><span>0577-85773087</span>
+            <i class="tel2"></i><span>0577-85773087</span>
+            <i class="email"></i><span>wzbcic@126.com</span>
+        </div>
+        <div class="weixin">
+            <div class="weixin-content">
+                <img class="weixin-img" src="img/mask.png">
+                <br>
+                微信扫一扫关注
             </div>
         </div>
-        <i class="info-bottom-icon info-bottom-icon-num"></i>
-    </div>
-    <div class="info-money">
-        <div>
-            <i class="info-icon info-money-icon"></i>
-            <div class="info-detail">
-                <span class="info-item-num">61880</span><br>
-                <span class="info-item-name">已投资金</span>
-            </div>
+        <div class="account">
+            <i class="address"></i><span>浙江省温州市海区茶山高教园区温州大学生命科学园</span>
         </div>
-        <i class="info-bottom-icon info-bottom-icon-money"></i>
     </div>
-    <div class="info-invest">
-        <div>
-            <i class="info-icon info-invest-icon"></i>
-            <div class="info-detail">
-                <span class="info-item-num">2148</span><br>
-                <span class="info-item-name">已投项目</span>
-            </div>
-        </div>
-        <i class="info-bottom-icon info-bottom-icon-invest"></i>
-    </div>
-</div>
-
-<div class="investor">
-    <div class="investor-header">投资方展示</div>
-    <div class="investor-container">
-        <i class="investor-left" id="investor_left"></i>
-        <div class="investor-content clearfix">
-            <div class="investor-banner" id="investor_banner">
-                <div class="investor-item">
-                    <img src="img/sub_img_tz01.png">
-                    <div>易贷网-快捷方便你的选择！</div>
-                </div>
-                <div class="investor-item">
-                    <img src="img/sub_img_tz02.png">
-                    <div>中国最早的网络借贷信息平台</div>
-                </div>
-                <div class="investor-item">
-                    <img src="img/sub_img_tz03.png">
-                    <div>让企业的融资更快、更简单</div>
-                </div>
-                <div class="investor-item">
-                    <img src="img/sub_img_tz04.png">
-                    <div>易贷网-快捷方便你的选择！</div>
-                </div>
-                <div class="investor-item">
-                    <img src="img/sub_img_tz05.png">
-                    <div>易贷网-快捷方便你的选择！</div>
-                </div>
-            </div>
-        </div>
-        <i class="investor-right" id="investor_right"></i>
-    </div>
-</div>
-
-<div class="investor">
-    <div class="investor-header">
-        投资方展示
-        <a class="investor-news-more">更多+</a>
+    <div class="footer-row2">
+        Copyright © 2006 - 2017 温州市生物医药协同创新中心版权所有 浙ICP备-20080005 技术支持 旌均信息
     </div>
 </div>
 
@@ -159,10 +111,10 @@
     </div>
     <div class="mask"></div>
 </div>
-<script src="js/rem.js"></script>
 <script src="js/jquery.min.js"></script>
 <script>
     $(function () {
+        $('#content').load('question.html');
         if (navigator.appName === 'Microsoft Internet Explorer') { //判断是否是IE浏览器
             if (navigator.userAgent.match(/Trident/i)) { //判断浏览器内核是否为Trident内核
                 if(navigator.userAgent.match(/MSIE 8.0/i) || navigator.userAgent.match(/MSIE 9.0/i)){  // IE8.0 和 9.0
@@ -215,5 +167,6 @@
         }
     })
 </script>
+<script src="js/rem.js"></script>
 </body>
 </html>
