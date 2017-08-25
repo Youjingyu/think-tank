@@ -1,0 +1,85 @@
+.pro-container{
+    width: 10.24rem;
+    margin: 0 auto;
+}
+.pro-main{
+    float: right;
+    padding: 0 0.2rem;
+    width: 7.8rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.pro-header{
+    margin-top: 0.2rem;
+    text-align: right;
+}
+.pro-header > button{
+    margin-left: 0.2rem;
+    padding: 0 5px;
+    height: 0.44rem;
+    background-color: #f3f3f3;
+    color: #999;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.pro-header > button:hover{
+    background-color: #ffcc33;
+    color: #333;
+}
+.header-search{
+    float: left;
+}
+.pro-table{
+    margin: 0.24rem 0;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    color: #333;
+    text-align: center;
+}
+.pro-table tr{
+    height: 0.54rem;
+}
+.pro-table td{
+    width: 18.4%;
+    border: 1px solid #ccc;
+}
+.pro-table .pro-table-control{
+    width: 8%;
+}
+.pro-table-header{
+    color: #999;
+    background-color: #f1f1ff;
+}
+.pro-table-icon{
+    display: inline-block;
+    width: 0.227rem;
+    height: 0.227rem;
+    vertical-align: middle;
+}
+.icon-off{
+    background-image: url("../img/sub_xq_off.png");
+    background-size: 100% 100%;
+}
+.icon-on{
+    background-image: url("../img/sub_xq_on.png");
+    background-size: 100% 100%;
+}
+.pro-table-cancel{
+    color: #ccc;
+}
+.demand-pass{
+    color: #33cc66;
+}
+.demand-interested{
+    color: #ff3333;
+}
+.demand-have{
+    color: #ff9900;
+}
+.demand-over{
+    color: #3399ff;
+}
+.demand-refuse{
+    color: #ff3333;
+}
