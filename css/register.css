@@ -1,0 +1,56 @@
+.register-main{
+    margin: 0.3rem 1.43rem;
+}
+.step{
+    font-size: 0;
+}
+.step-item{
+    display: inline-block;
+    width: 33.3333333%;
+    height: 0.557rem;
+    line-height: 0.557rem;
+    text-align: center;
+    font-size: 0.17rem;
+    color: #333;
+    font-weight: bold;
+    background: url("../img/sub_zc_tap_off.png") no-repeat;
+    background-size: 100% 100%;
+}
+.step-item-active{
+    background: url("../img/sub_zc_tap_on.png") no-repeat;
+    background-size: 100% 100%;
+}
+.register-type{
+    margin-top: 0.25rem;
+    font-size: 0;
+}
+.register-type span{
+    display: inline-block;
+    height: 0.4rem;
+    width: 1rem;
+    line-height: 0.4rem;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    color: #333;
+    font-size: 0.16rem;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+.register-type span:first-child{
+    border-left: 1px solid #ccc;
+}
+.register-type .active{
+    background-color: #33cc66;
+    color: #fff;
+}
+
+.register-main .qes-form{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.qes-form-back:hover{
+    background-color: #ffcc33;
+}
