@@ -1,0 +1,7 @@
+.question-container{
+    margin: 0 auto;
+    width: 10.24rem;
+}
+.question-container .qes-form{
+    border: 1px solid #ccc;
+}
