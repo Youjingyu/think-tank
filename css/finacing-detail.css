@@ -1,0 +1,148 @@
+.finace-header{
+    margin-top: 0.2rem;
+    text-align: right;
+}
+.finace-header button{
+    margin-right: 0.2rem;
+    width: 0.92rem;
+    height: 0.44rem;
+    background-color: #f3f3f3;
+    color: #999;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.finace-header .finace-item{
+    border: none;
+    background-color: #ffcc33;
+    color: #333;
+}
+.finace-table-container{
+    padding: 0 0.4rem 0.4rem;
+}
+.finace-table-container > div, .finace-table-container > table{
+    margin-top: 0.2rem;
+}
+.finace-item-info{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+.finace-item-info caption{
+    height: 0.54rem;
+    line-height: 0.54rem;
+    text-align: left;
+    text-indent: 1em;
+    color: #fff;
+    background-color: #33cc66;
+}
+.finace-item-info tr{
+    height: 0.54rem;
+}
+.finace-item-info td{
+    width: 20%;
+}
+.finace-item-info .finace-table-header{
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #999;
+}
+.finace-item-info td{
+    border: 1px solid #ccc;
+}
+
+.finace-item-detail-title{
+    font-size: 0;
+}
+.finace-item-detail-title span{
+    display: inline-block;
+    height: 0.4rem;
+    width: 1rem;
+    line-height: 0.4rem;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    color: #333;
+    font-size: 0.16rem;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+.finace-item-detail-title span:first-child{
+    border-left: 1px solid #ccc;
+}
+.finace-item-detail-title .active{
+    background-color: #33cc66;
+    color: #fff;
+}
+.finace-item-detail{
+    padding: 0.2rem;
+    height: 2.986rem;
+    border: 1px solid #ccc;
+}
+
+.finace-item-info .stock-chnage{
+    background-color: #fff;
+    color: #999;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.company-detail{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    color: #999;
+}
+.company-detail tr{
+    height: 1.07rem;
+}
+.company-detail td{
+    width: 30%;
+    border: 1px solid #ccc;
+}
+.company-detail .company-detail-item{
+    width: 20%;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.company-detail .company-history{
+    height: 3.28rem;
+}
+.history-item{
+    display: inline-block;
+    position: relative;
+    margin-top: 0.4rem;
+    margin-left: 0.28rem;
+    text-align: center;
+}
+.history-item span{
+    color: #999;
+    font-size: 0.14rem;
+}
+.history-num{
+    display: inline-block;
+    margin-bottom: 0.15rem;
+    width: 0.32rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #333;
+}
+.history-active{
+    background-color: #ffcc33;
+}
+.history-alert{
+    position: absolute;
+    top: -0.15rem;
+    width: 3.22rem;
+    max-height: 1.16rem;
+    background-color: #ccc;
+    border: 1px solid #f1f1f1;
+    color: #333;
+    overflow: auto;
+    text-align: justify;
+    padding: 3px;
+    border-radius: 5px;
+}
