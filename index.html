@@ -9,7 +9,7 @@
     <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
     <link rel="stylesheet" type="text/css" href="css/form.css">
     <!--<link rel="stylesheet" type="text/css" href="css/question.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/act-info.css">-->
+    <link rel="stylesheet" type="text/css" href="css/act-info.css">
     <!--<link rel="stylesheet" type="text/css" href="css/news-detail.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/all-act-info.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/investors.css">-->
@@ -17,11 +17,11 @@
     <!--<link rel="stylesheet" type="text/css" href="css/life-healthy.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/demand-manage.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
-    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/register.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
     <!--
-    todo 验证码、面包屑、lefe-healthy顶部配置换行问题、兼容性、宽度变化、侧边栏
-    文件上传、页码、投资项目popover、单选按钮、project编辑
+    todo 验证码、lefe-healthy顶部配置换行问题、兼容性、宽度变化
+    文件上传、页码、投资项目popover、单选按钮、project编辑、面包屑、侧边栏
     -->
 </head>
 <body>
@@ -72,6 +72,12 @@
     </div>
 </div>
 
+<div class="not-index-banner">
+    <img src="img/sub_banner.png">
+</div>
+<div class="crumbs">
+    您的位置：<span>首页</span>&nbsp;>&nbsp;<span>项目融资</span>&nbsp;>&nbsp;<span>生命健康领域</span>
+</div>
 <div id="content"></div>
 
 <div class="footer">
@@ -129,7 +135,7 @@
 <script src="js/jquery.min.js"></script>
 <script>
     $(function () {
-        $('#content').load('register.html', function () {
+        $('#content').load('act-info.html', function () {
             $('#sidebar').load('sidebar.html');
 
             // 兼容ie8 9不支持placeholder属性的问题

@@ -29,10 +29,12 @@ ul, p{
 }
 
 .container{
-    width: 10.24rem;
-    margin: 0 auto;
     border: 1px solid #ccc;
     background-color: #fff;
+}
+.container-2{
+    width: 10.24rem;
+    margin: 0 auto;
 }
 
 .modal-container{
@@ -217,6 +219,23 @@ ul, p{
 }
 .header-nav-item-active{
     background-color: #33cc66;
+}
+
+.not-index-banner{
+    margin: 0 auto;
+    width: 10.24rem;
+    height: 2rem;
+}
+.not-index-banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.crumbs{
+    margin: 0.12rem auto;
+    width: 10.24rem;
+    font-size: 0.14rem;
+    color: #999;
 }
 
 .footer{
