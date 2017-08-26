@@ -6,10 +6,10 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
     <!--<link rel="stylesheet" type="text/css" href="css/question.css">-->
-    <link rel="stylesheet" type="text/css" href="css/act-info.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/act-info.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/news-detail.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/all-act-info.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/investors.css">-->
@@ -72,12 +72,12 @@
     </div>
 </div>
 
-<div class="not-index-banner">
-    <img src="img/sub_banner.png">
-</div>
-<div class="crumbs">
-    您的位置：<span>首页</span>&nbsp;>&nbsp;<span>项目融资</span>&nbsp;>&nbsp;<span>生命健康领域</span>
-</div>
+<!--<div class="not-index-banner">-->
+    <!--<img src="img/sub_banner.png">-->
+<!--</div>-->
+<!--<div class="crumbs">-->
+    <!--您的位置：<span>首页</span>&nbsp;>&nbsp;<span>项目融资</span>&nbsp;>&nbsp;<span>生命健康领域</span>-->
+<!--</div>-->
 <div id="content"></div>
 
 <div class="footer">
@@ -114,9 +114,8 @@
                         <input placeholder="请输入您的密码.." class="login-pwd">
                         <input placeholder="请输入验证码.." class="login-valid-num">
                         <div class="login-valid">
-                            <div class="login-valid-img">
-                                <img src="">
-                            </div>
+                            <img class="login-valid-img" src="img/valid_num.png">
+                            &nbsp;
                             <span class="login-change-valid-num">看不清？换一个</span>
                         </div>
                         <div>
@@ -135,7 +134,7 @@
 <script src="js/jquery.min.js"></script>
 <script>
     $(function () {
-        $('#content').load('act-info.html', function () {
+        $('#content').load('index-content.html', function () {
             $('#sidebar').load('sidebar.html');
 
             // 兼容ie8 9不支持placeholder属性的问题

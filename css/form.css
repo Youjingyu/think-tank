@@ -52,9 +52,11 @@
 .valid-num input, .valid-num button, .valid-num img{
     width: 1.195rem;
     height: 0.4rem;
+    vertical-align: middle;
 }
 .valid-num img{
     margin: 0 0.2rem;
+    border-radius: 5px;
 }
 
 .file-upload{

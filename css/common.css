@@ -118,9 +118,10 @@ ul, p{
     background: url("../img/login_rpasw.png") no-repeat;
 }
 .login-valid-img{
-    display: inline-block;
-    width: 1.18rem;
+    width: 1.126rem;
     height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
 }
 .login-change-valid-num{
     color: #0099ff;
