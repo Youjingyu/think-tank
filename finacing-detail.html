@@ -43,7 +43,7 @@
                 <span>项目计划</span>
             </div>
             <div class="finace-item-detail">
-                项目简介项目简介项目简介项目简介项目简介项目简介
+
             </div>
         </div>
         <table class="finace-item-info">
@@ -142,5 +142,11 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
+<script>
+    $('.finace-item-detail-title').on('click', 'span', function(){
+        $(this).parent().find('.active').removeClass('active');
+        $(this).addClass('active');
+    })
+</script>
 <script src="js/rem.js"></script>
 </body>
