@@ -54,6 +54,26 @@
     margin: 0 0.2rem;
 }
 
+.file-upload{
+    position: relative;
+}
+.file-upload > span{
+    display: inline-block;
+    margin-left: 0.15rem;
+    height: 0.4rem;
+    width: 2.837rem;
+    line-height: 0.4rem;
+    text-indent: 0.12rem;
+    background: url("../img/sub_upload_input.png") no-repeat;
+    background-size: 100% 100%;
+}
+.file-upload > input{
+    position: absolute;
+    left: 1rem;
+    opacity: 0;
+    z-index: 1;
+}
+
 .qes-form > .act-info-submit-row{
     margin: 0.4rem auto;
     text-align: center;
