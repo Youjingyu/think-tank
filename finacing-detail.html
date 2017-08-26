@@ -146,6 +146,12 @@
     $('.finace-item-detail-title').on('click', 'span', function(){
         $(this).parent().find('.active').removeClass('active');
         $(this).addClass('active');
+    });
+    $('.history-item').on('mouseover', function(){
+        $(this).find('.history-arrow, .history-alert ').show();
+    })
+    $('.history-item').on('mouseout', function(){
+        $(this).find('.history-arrow, .history-alert ').hide();
     })
 </script>
 <script src="js/rem.js"></script>

@@ -175,3 +175,7 @@
 .history-alert-2{
     left: -120%;
 }
+
+.history-arrow, .history-alert{
+    display: none;
+}
