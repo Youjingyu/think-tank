@@ -28,7 +28,7 @@ $(function () {
                 }
             }
 
-            // 高量导航栏
+            // 高亮导航栏
             var  $header_nav_list = $('.header-nav-list');
             $header_nav_list.find('li').each(function () {
                 var $this = $(this);
@@ -37,6 +37,20 @@ $(function () {
                     $this.addClass('header-nav-item-active');
                 }
             })
+
+            setTimeout(function () {
+                // 高亮导航栏
+                var  $sidebar = $('.sidebar');
+                $sidebar.find('li').each(function () {
+                    var $this = $(this);
+                    var href = $this.find('a').attr('href');
+                    if(href){
+                        if(new RegExp(href.replace(/.*\//, '')).test(location.href)){
+                            $this.addClass('sidebar-active');
+                        }
+                    }
+                })
+            }, 500);
 
             // 登录弹窗
             $('#login').on('click', function () {
