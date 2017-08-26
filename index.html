@@ -9,17 +9,17 @@
     <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
     <link rel="stylesheet" type="text/css" href="css/form.css">
     <!--<link rel="stylesheet" type="text/css" href="css/question.css">-->
-    <link rel="stylesheet" type="text/css" href="css/act-info.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/act-info.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/news-detail.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/all-act-info.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/investors.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/finacing-detail.css">-->
+    <link rel="stylesheet" type="text/css" href="css/finacing-detail.css">
     <!--<link rel="stylesheet" type="text/css" href="css/life-healthy.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/demand-manage.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/register.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
-    <!--todo 验证码、文件上传、页码、投资项目popover、单选按钮、project编辑、侧边栏-->
+    <!--todo 验证码、文件上传、页码、投资项目popover、单选按钮、project编辑、侧边栏、面包屑-->
 </head>
 <body>
 <script>
@@ -126,8 +126,8 @@
 <script src="js/jquery.min.js"></script>
 <script>
     $(function () {
-        $('#content').load('act-info.html', function () {
-            $('#sidebar').load('sidebar.html');
+        $('#content').load('finacing-detail.html', function () {
+//            $('#sidebar').load('sidebar.html');
         });
         if (navigator.appName === 'Microsoft Internet Explorer') { //判断是否是IE浏览器
             if (navigator.userAgent.match(/Trident/i)) { //判断浏览器内核是否为Trident内核
