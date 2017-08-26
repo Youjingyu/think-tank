@@ -18,16 +18,22 @@
     height: 1.487rem;
 }
 .life-config{
-    padding: 0.2rem 0;
+    padding-top: 0.2rem;
     border-bottom: 1px dashed #ccc;
 }
-.life-config > * {
-    margin-left: 0.2rem;
+.life-config-last{
+    padding-bottom: 0.2rem;
 }
-.life-config > *:first-child {
-    margin-left: 0;
+.life-config-content{
+    float: left;
+    width: 6.4rem;
+    line-height: 0.44rem;
+}
+.life-config-content .custom-radio input{
+    bottom: 0;
 }
 .life-config > span{
+    float: left;
     display: inline-block;
     width: 0.92rem;
     height: 0.44rem;
@@ -40,6 +46,7 @@
 }
 .life-config-item{
     display: inline-block;
+    margin-left: 0.2rem;
 }
 .life-config-item input{
     vertical-align: middle;

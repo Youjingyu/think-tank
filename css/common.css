@@ -125,6 +125,7 @@ ul, p{
 }
 .login-change-valid-num{
     color: #0099ff;
+    cursor: pointer;
 }
 .login-sign{
     float: right;
@@ -332,6 +333,9 @@ ul, p{
     width: 0.17rem;
     height: 0.17rem;
     margin-right: 0.09rem;
+}
+.login-form .custom-radio{
+    vertical-align: middle;
 }
 .custom-radio > input{
     position: absolute;
