@@ -323,6 +323,10 @@ ul, p{
     color: #fff;
     background-color: #33cc66;
 }
+.page li:last-child:hover{
+    color: #999;
+    background-color: #fff;
+}
 .page .page-active{
     color: #fff;
     background-color: #33cc66;
