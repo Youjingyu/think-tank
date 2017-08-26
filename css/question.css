@@ -5,3 +5,25 @@
 .question-container .qes-form{
     border: 1px solid #ccc;
 }
+.about-main{
+    float: right;
+    padding: 0.3rem;
+    width: 7.9rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.about-img{
+    padding-top: 0.2rem;
+    text-align: center;
+}
+.article{
+    color: #333;
+    font-size: 0.18rem;
+}
+.article h5{
+    font-size: 0.16rem;
+    font-weight: normal;
+}
+.article p {
+    text-indent: 2em;
+}
