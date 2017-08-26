@@ -50,7 +50,7 @@ $(function () {
                         }
                     }
                 })
-            }, 500);
+            }, 0);
 
             // 登录弹窗
             $('#login').on('click', function () {
