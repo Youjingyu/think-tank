@@ -14,12 +14,15 @@
     <!--<link rel="stylesheet" type="text/css" href="css/all-act-info.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/investors.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/finacing-detail.css">-->
-    <link rel="stylesheet" type="text/css" href="css/life-healthy.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/life-healthy.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/demand-manage.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/register.css">-->
+    <link rel="stylesheet" type="text/css" href="css/register.css">
     <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
-    <!--todo 验证码、文件上传、页码、投资项目popover、单选按钮、project编辑、侧边栏、面包屑-->
+    <!--
+    todo 验证码、面包屑、lefe-healthy顶部配置换行问题、兼容性、宽度变化、侧边栏
+    文件上传、页码、投资项目popover、单选按钮、project编辑
+    -->
 </head>
 <body>
 <script>
@@ -126,8 +129,8 @@
 <script src="js/jquery.min.js"></script>
 <script>
     $(function () {
-        $('#content').load('life-healthy.html', function () {
-//            $('#sidebar').load('sidebar.html');
+        $('#content').load('register.html', function () {
+            $('#sidebar').load('sidebar.html');
 
             // 兼容ie8 9不支持placeholder属性的问题
             if (navigator.appName === 'Microsoft Internet Explorer') { //判断是否是IE浏览器

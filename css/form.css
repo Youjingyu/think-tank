@@ -27,6 +27,9 @@
     margin-left: 0.15rem;
     vertical-align: middle;
 }
+.qes-form-radio-label{
+    vertical-align: middle;
+}
 .qes-form-radio input, .qes-form-radio span{
     vertical-align: middle;
 }

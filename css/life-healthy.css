@@ -42,7 +42,6 @@
     display: inline-block;
 }
 .life-config-item input{
-    margin-right: 0.09rem;
     vertical-align: middle;
 }
 .life-config-item label{

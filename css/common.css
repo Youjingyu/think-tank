@@ -306,3 +306,29 @@ ul, p{
     color: #fff;
     background-color: #33cc66;
 }
+
+.custom-radio{
+    position: relative;
+    width: 0.17rem;
+    height: 0.17rem;
+    margin-right: 0.09rem;
+}
+.custom-radio > input{
+    position: absolute;
+    left: 0;
+    width: 0.17rem;
+    height: 0.17rem;
+    opacity: 0;
+}
+.custom-radio > label{
+    display: inline-block;
+    z-index: 1;
+    width: 0.17rem;
+    height: 0.17rem;
+    background: url("../img/raido_off.png") no-repeat;
+    background-size: 100% 100%;
+}
+.custom-radio > input:checked + label{
+    background: url("../img/raido_on.png") no-repeat;
+    background-size: 100% 100%;
+}
