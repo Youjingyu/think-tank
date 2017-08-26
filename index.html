@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>协创智库</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
@@ -17,12 +17,12 @@
     <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/register.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
-    <!--
-    todo 宽度变化、兼容性
-    文件上传、页码、投资项目popover、单选按钮、project编辑、面包屑、侧边栏、验证码、lefe-healthy顶部配置换行问题
-    -->
 </head>
 <body>
+<!--
+    todo 宽度变化、兼容性、侧边栏不同页面高亮、路演信息
+    文件上传、页码、投资项目popover、单选按钮、project编辑、面包屑、侧边栏、验证码、lefe-healthy顶部配置换行问题
+    -->
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,
@@ -69,13 +69,6 @@
         </div>
     </div>
 </div>
-
-<!--<div class="not-index-banner">-->
-    <!--<img src="img/sub_banner.png">-->
-<!--</div>-->
-<!--<div class="crumbs">-->
-    <!--您的位置：<span>首页</span>&nbsp;>&nbsp;<span>项目融资</span>&nbsp;>&nbsp;<span>生命健康领域</span>-->
-<!--</div>-->
 <div id="content"></div>
 
 <div class="footer">
@@ -133,88 +126,7 @@
     <div class="mask"></div>
 </div>
 <script src="js/jquery.min.js"></script>
-<script>
-    $(function () {
-        $('#content').load('life-healthy.html', function () {
-            $('#sidebar').load('sidebar.html');
-
-            // 兼容ie8 9不支持placeholder属性的问题
-            if (navigator.appName === 'Microsoft Internet Explorer') { //判断是否是IE浏览器
-                if (navigator.userAgent.match(/Trident/i)) { //判断浏览器内核是否为Trident内核
-                    if(navigator.userAgent.match(/MSIE 8.0/i) || navigator.userAgent.match(/MSIE 9.0/i)){  // IE8.0 和 9.0
-                        $('input').each(function () {
-                            var $this = $(this);
-                            var placeholder = $this.attr('placeholder');
-                            if(placeholder){
-                                this.value = placeholder;
-                                $this.on('focus', function () {
-                                    if(this.value == placeholder){
-                                        this.value = '';
-                                    }
-                                });
-                                $this.on('blur', function () {
-                                    if(this.value == ''){
-                                        this.value = placeholder;
-                                    }
-                                });
-                            }
-                        });
-                    }
-                }
-            }
-
-            // 登录弹窗
-            $('#login').on('click', function () {
-                $('#login_modal').show();
-            })
-            $('#login_modal').on('click', function (event) {
-                if(/^modal$/.test(event.target.className)){
-                    $(this).hide();
-                }
-            })
-
-            // 首页投资机构滚动banner逻辑
-            $('#investor_left').on('click', function () {
-                var $investor_banner = $('#investor_banner');
-                var item_width = 2.4 * pxToInt(document.documentElement.style.fontSize);
-                var cur_margin = pxToInt($investor_banner.css('margin-left'));
-                if(cur_margin < 0){
-                    $investor_banner.css('margin-left', (cur_margin + item_width) + 'px');
-                }
-            });
-            $('#investor_right').on('click', function () {
-                var $investor_banner = $('#investor_banner');
-                var item_width = 2.4 * pxToInt(document.documentElement.style.fontSize);
-                var cur_margin = pxToInt($investor_banner.css('margin-left'));
-                if((0 - cur_margin) < ($('.investor-item').length - 3) * item_width){
-                    $investor_banner.css('margin-left', (cur_margin - item_width) + 'px');
-                }
-            });
-            function pxToInt(px) {
-                return parseFloat(px.replace('px', ''));
-            }
-
-            // 页面翻页逻辑
-            var $page = $('.page');
-            var $pageList = $page.find('li');
-            $pageList.eq($pageList.length - 1).on('click', function () {
-                var $cur_page = $page.find('.page-active');
-                if($cur_page.next().next().length !== 0){
-                    $cur_page.removeClass('page-active');
-                    $cur_page.next().addClass('page-active');
-                }
-            });
-            $pageList.each(function (index) {
-                if(index < $pageList.length - 1){
-                    $(this).on('click', function () {
-                        $page.find('.page-active').removeClass('page-active');
-                        $(this).addClass('page-active');
-                    });
-                }
-            })
-        });
-    })
-</script>
+<script src="js/common.js"></script>
 <script src="js/rem.js"></script>
 </body>
 </html>
