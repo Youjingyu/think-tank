@@ -5,128 +5,149 @@
     <title>协创智库</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/question.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/act-info.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/news-detail.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/all-act-info.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/investors.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/finacing-detail.css">-->
-    <link rel="stylesheet" type="text/css" href="css/life-healthy.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/demand-manage.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/register.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/project-list.css">-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 <!--
     todo 宽度变化、兼容性、侧边栏不同页面高亮、路演信息
     文件上传、页码、投资项目popover、单选按钮、project编辑、面包屑、侧边栏、验证码、lefe-healthy顶部配置换行问题
     -->
-<script>
-    (function (doc, win) {
-        var docEl = doc.documentElement,
-        //resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth || clientWidth < 1024) return;
-                    docEl.style.fontSize = clientWidth * (100 / 1920) + 'px';
-                };
-        if (doc.addEventListener){
-            win.addEventListener('resize', recalc, false);
-            //doc.addEventListener('DOMContentLoaded', recalc, false);
-        } else{
-            win.attachEvent('onresize', recalc);
-            //doc.attachEvent('onDOMContentLoaded', recalc);
-        }
-        recalc();
-    })(document, window);
-</script>
-<div class="header">
-    <div class="header-top clearfix">
-        <img src="img/logo.png" class="header-logo">
-        <div class="header-right">
-            <div class="header-sign">
-                <a id="login">登录</a>&nbsp;&nbsp;
-                <a>注册</a>
-            </div>
-            <div class="header-search">
-                <input placeholder="请输入您要查询的文字.."><button class="header-search-off"></button>
-            </div>
-        </div>
-    </div>
-    <div class="header-nav-container">
-        <div class="header-nav">
-            <ul class="header-nav-list clearfix">
-                <li class="header-nav-item header-nav-item-active"><a>首页</a></li>
-                <li class="header-nav-item"><a>新闻动态</a></li>
-                <li class="header-nav-item"><a>项目融资</a></li>
-                <li class="header-nav-item"><a>项目投资</a></li>
-                <li class="header-nav-item"><a>路演信息</a></li>
-                <li class="header-nav-item"><a>投资机构</a></li>
-                <li class="header-nav-item"><a>关于我们</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div id="content"></div>
+<script src="js/setRootSize.js"></script>
+<div id="header"></div>
 
-<div class="footer">
-    <div class="footer-row1">
-        <div class="account">
-            <i class="tel1"></i><span>0577-85773087</span>
-            <i class="tel2"></i><span>0577-85773087</span>
-            <i class="email"></i><span>wzbcic@126.com</span>
-        </div>
-        <div class="weixin">
-            <div class="weixin-content">
-                <img class="weixin-img" src="img/mask.png">
-                <br>
-                微信扫一扫关注
+<div class="banner">
+    <img src="img/banner.png">
+</div>
+
+<div class="info clearfix">
+    <div class="info-num">
+        <div>
+            <i class="info-icon info-num-icon"></i>
+            <div class="info-detail">
+                <span class="info-item-num">2148</span><br>
+                <span class="info-item-name">项目数量</span>
             </div>
         </div>
-        <div class="account">
-            <i class="address"></i><span>浙江省温州市海区茶山高教园区温州大学生命科学园</span>
-        </div>
+        <i class="info-bottom-icon info-bottom-icon-num"></i>
     </div>
-    <div class="footer-row2">
-        Copyright © 2006 - 2017 温州市生物医药协同创新中心版权所有 浙ICP备-20080005 技术支持 旌均信息
+    <div class="info-money">
+        <div>
+            <i class="info-icon info-money-icon"></i>
+            <div class="info-detail">
+                <span class="info-item-num">61880</span><br>
+                <span class="info-item-name">已投资金</span>
+            </div>
+        </div>
+        <i class="info-bottom-icon info-bottom-icon-money"></i>
+    </div>
+    <div class="info-invest">
+        <div>
+            <i class="info-icon info-invest-icon"></i>
+            <div class="info-detail">
+                <span class="info-item-num">2148</span><br>
+                <span class="info-item-name">已投项目</span>
+            </div>
+        </div>
+        <i class="info-bottom-icon info-bottom-icon-invest"></i>
     </div>
 </div>
 
-<div class="modal-container" id="login_modal">
-    <div class="modal">
-        <div class="modal-content">
-            <div class="modal-login">
-                <div class="login">
-                    <form class="login-form">
-                        <h3>用户登录</h3>
-                        <input placeholder="请输入您的用户名.." class="login-user">
-                        <input placeholder="请输入您的密码.." class="login-pwd">
-                        <input placeholder="请输入验证码.." class="login-valid-num">
-                        <div class="login-valid">
-                            <img class="login-valid-img" src="img/valid_num.png">
-                            &nbsp;
-                            <span class="login-change-valid-num">看不清？换一个</span>
-                        </div>
-                        <div>
-                            <span class="custom-radio">
-                                <input type="radio" name="save_password"><label></label>
-                            </span>
-                            <label>记住密码</label>
-                            <a class="login-sign">立即注册</a>
-                        </div>
-                        <button class="login-submit">提交</button>
-                    </form>
-                    <h4>请妥善保管您的账户密码！</h4>
+<div class="investor">
+    <div class="investor-header">投资方展示</div>
+    <div class="investor-container">
+        <i class="investor-left" id="investor_left"></i>
+        <div class="investor-content clearfix">
+            <div class="investor-banner" id="investor_banner">
+                <div class="investor-item">
+                    <img src="img/sub_img_tz01.png">
+                    <div>易贷网-快捷方便你的选择！</div>
+                </div>
+                <div class="investor-item">
+                    <img src="img/sub_img_tz02.png">
+                    <div>中国最早的网络借贷信息平台</div>
+                </div>
+                <div class="investor-item">
+                    <img src="img/sub_img_tz03.png">
+                    <div>让企业的融资更快、更简单</div>
+                </div>
+                <div class="investor-item">
+                    <img src="img/sub_img_tz04.png">
+                    <div>易贷网-快捷方便你的选择！</div>
+                </div>
+                <div class="investor-item">
+                    <img src="img/sub_img_tz05.png">
+                    <div>易贷网-快捷方便你的选择！</div>
                 </div>
             </div>
         </div>
+        <i class="investor-right" id="investor_right"></i>
     </div>
-    <div class="mask"></div>
 </div>
+
+<div class="investor clearfix">
+    <div class="investor-news clearfix">
+        <div class="investor-header">
+            投资方展示
+            <a class="investor-news-more">更多+</a>
+        </div>
+        <div class="news-content clearfix">
+            <div class="news-left">
+                <img src="img/img_04.png">
+                <div class="news-img-icon">
+                    <img src="img/img_05.png">
+                    <img src="img/img_06.png">
+                    <img src="img/img_07.png">
+                    <img src="img/img_08.png">
+                    <img src="img/img_09.png">
+                </div>
+            </div>
+            <div class="news-right">
+                <div class="new-detail">
+                    <h4>李伟主任出席中瑞创新论坛并会见</h4>
+                    <p>
+                        李伟胡主任应邀出席由中华全国工商业联合会和瑞典驻华使馆共同主办的2017中瑞创新论坛，并在全体会议上致辞。
+                    </p>
+                    <p class="news-date">2016-01-23</p>
+                </div>
+                <ul class="news-list">
+                    <li>第二届中英发展论坛在北京举行</li>
+                    <li>第二届中英发展论坛在北京举行</li>
+                    <li>第二届中英发展论坛在北京举行</li>
+                    <li>第二届中英发展论坛在北京举行</li>
+                    <li>第二届中英发展论坛在北京举行</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="investor-act">
+        <div class="investor-header">
+            路演信息
+            <a class="investor-news-more">更多+</a>
+        </div>
+        <ul class="news-list">
+            <li>第二届中英发展论坛在北京举行</li>
+            <li>第二届中英发展论坛在北京举行</li>
+            <li>第二届中英发展论坛在北京举行</li>
+            <li>第二届中英发展论坛在北京举行</li>
+            <li>第二届中英发展论坛在北京举行</li>
+            <li>第二届中英发展论坛在北京举行</li>
+            <li>第二届中英发展论坛在北京举行</li>
+            <li>第二届中英发展论坛在北京举行</li>
+            <li>第二届中英发展论坛在北京举行</li>
+            <li>第二届中英发展论坛在北京举行</li>
+        </ul>
+    </div>
+</div>
+
+<div id="footer-and-modal"></div>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
+<script>
+    setTimeout(function () {
+        $('.not-index-banner, .crumbs').remove()
+    }, 500);
+</script>
 <script src="js/rem.js"></script>
 </body>
 </html>

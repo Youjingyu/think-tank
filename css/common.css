@@ -20,7 +20,7 @@ ul, p{
     margin: 0;
 }
 a{
-    color: #333;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -141,7 +141,8 @@ a{
     float: right;
     cursor: pointer;
 }
-.login-submit{
+.login-form > .login-submit{
+    margin-top: 0.1rem;
     width: 2.4rem;
     border: none;
     border-radius: 5px;
@@ -219,6 +220,9 @@ a{
     list-style: none;
     cursor: pointer;
 }
+.header-nav-item:first-child{
+    border-left: 1px solid #33cc66;
+}
 .header-nav-item{
     float: left;
     width: 14.2587%;
@@ -232,6 +236,11 @@ a{
 }
 .header-nav-item-active{
     background-color: #33cc66;
+}
+.header-nav-item a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 /* 非首页banner */

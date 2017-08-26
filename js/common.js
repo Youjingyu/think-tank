@@ -28,6 +28,16 @@ $(function () {
                 }
             }
 
+            // 高量导航栏
+            var  $header_nav_list = $('.header-nav-list');
+            $header_nav_list.find('li').each(function () {
+                var $this = $(this);
+                var href = $this.find('a').attr('href');
+                if(new RegExp(href.replace(/.*\//, '')).test(location.href)){
+                    $this.addClass('header-nav-item-active');
+                }
+            })
+
             // 登录弹窗
             $('#login').on('click', function () {
                 $('#login_modal').show();
