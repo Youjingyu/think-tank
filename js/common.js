@@ -28,18 +28,29 @@ $(function () {
                 }
             }
 
-            // 高亮导航栏
             var  $header_nav_list = $('.header-nav-list');
+
+            // 二级菜单显示
+            $header_nav_list.find('.js-has-sub').on('mouseover', function(){
+                $(this).find('.header-nav-sub').show();
+            });
+            $header_nav_list.find('.js-has-sub').on('mouseout', function(){
+                $(this).find('.header-nav-sub').hide();
+            });
+
+            // 高亮导航栏
             $header_nav_list.find('li').each(function () {
                 var $this = $(this);
                 var href = $this.find('a').attr('href');
-                if(new RegExp(href.replace(/.*\//, '')).test(location.href)){
-                    $this.addClass('header-nav-item-active');
+                if(href){
+                    if(new RegExp(href.replace(/.*\//, '')).test(location.href)){
+                        $this.addClass('header-nav-item-active');
+                    }
                 }
             })
 
             setTimeout(function () {
-                // 高亮导航栏
+                // 高亮侧边栏
                 var  $sidebar = $('.sidebar');
                 $sidebar.find('li').each(function () {
                     var $this = $(this);
