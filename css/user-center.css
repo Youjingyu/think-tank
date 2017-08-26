@@ -1,0 +1,174 @@
+.user-container{
+    width: 10.24rem;
+    margin: 0 auto;
+}
+.uer-main{
+    float: right;
+    width: 7.8rem;
+}
+.user-banner{
+    padding: 0.2rem 0.2rem 0;
+    border: 1px solid #ccc;
+    color: #333;
+    background-color: #fff;
+}
+.user-banner > img{
+    float: left;
+    margin: 0 0.2rem 0 0.15rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+.user-info{
+    margin-left: 1.4rem;
+}
+.user-name > div{
+    float: right;
+}
+.user-name img{
+    vertical-align: middle;
+}
+.user-name > img{
+    margin-left: -0.15rem;
+    width: 0.108rem;
+    height: 0.2rem;
+}
+.user-company{
+    width: 0.216rem;
+    height: 0.196rem;
+}
+.user-investor{
+    width: 0.2rem;
+    height: 0.2rem;
+}
+.user-concat{
+    margin: 0.18rem 0 0.15rem;
+}
+.user-item{
+    color: #999;
+}
+.user-login-time{
+    margin: 0.07rem 0 0.1rem;
+    text-align: right;
+}
+
+.invests{
+    width: 100%;
+}
+.invests > div{
+    position: relative;
+    float: left;
+    width: 33.3333333%;
+    height: 1.217rem;
+}
+.invests > div > div {
+    margin: 0.26rem 0 0 0.40rem;
+}
+.invests-num{
+    background-color: #ff9600;
+}
+.invests-money{
+    background-color: #2c97ea;
+}
+.invests-invest{
+    background-color: #f0bc01;
+}
+.invests i{
+    display: inline-block;
+    vertical-align: middle;
+}
+.invests-icon{
+
+}
+.invests-num-icon{
+    width: 0.496rem;
+    height: 0.73rem;
+    background: url("../img/rz_icon_01.png") no-repeat;
+    background-size: 100% 100%;
+}
+.invests-money-icon{
+    width: 0.496rem;
+    height: 0.617rem;
+    background: url("../img/rz_icon_02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.invests-invest-icon{
+    width: 0.513rem;
+    height: 0.696rem;
+    background: url("../img/rz_icon_03.png") no-repeat;
+    background-size: 100% 100%;
+}
+.invests-detail{
+    display: inline-block;
+    margin-left: 0.35rem;
+    height: 100%;
+    color: #fff;
+    vertical-align: middle;
+}
+.invests-item-num{
+    font-size: 0.32rem;
+    font-weight: bold;
+}
+.invests-item-name{
+    display: inline-block;
+    margin-top: 0.12rem;
+}
+.invests-bottom-icon{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: -0.18rem;
+    margin-left: -0.18rem;
+    width: 0.36rem;
+    height: 0.36rem;
+}
+.invests-bottom-icon-num{
+    background: url("../img/rz_icon_04.png") no-repeat;
+    background-size: 100% 100%;
+}
+.invests-bottom-icon-money{
+    background: url("../img/rz_icon_05.png") no-repeat;
+    background-size: 100% 100%;
+}
+.invests-bottom-icon-invest{
+    background: url("../img/rz_icon_06.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.invests-news{
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+}
+.invests-header{
+    padding-left: 0.08rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    background-color: #17a43b;
+    color: #fff;
+}
+.iinvests-news-more{
+    float: right;
+    margin-right: 0.08rem;
+    cursor: pointer;
+}
+.invests-news-list-con{
+    margin-top: 0.2rem;
+    color: #3333;
+    line-height: 0.26rem;
+}
+.invests-news-list-con ul{
+    float: right;
+    width: 3.5rem;
+}
+.invests-news-list-con ul:first-child{
+    float: left;
+    margin-left: 0.2rem;
+}
+.invests-news-list-con li{
+    list-style-position: inside;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
