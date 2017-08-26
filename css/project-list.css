@@ -49,7 +49,7 @@
 }
 .pro-table-header{
     color: #999;
-    background-color: #f1f1ff;
+    background-color: #f1f1f1;
 }
 .pro-table-icon{
     display: inline-block;
@@ -58,11 +58,11 @@
     vertical-align: middle;
 }
 .icon-off{
-    background-image: url("../img/sub_xq_off.png");
+    background: url("../img/sub_xq_off.png") no-repeat;
     background-size: 100% 100%;
 }
 .icon-on{
-    background-image: url("../img/sub_xq_on.png");
+    background: url("../img/sub_xq_on.png") no-repeat;
     background-size: 100% 100%;
 }
 .pro-table-cancel{
@@ -82,4 +82,70 @@
 }
 .demand-refuse{
     color: #ff3333;
+}
+
+.pro-table-edit{
+    position: relative;
+    padding: 0;
+}
+.pro-table-edit-item{
+    position: absolute;
+    top: 0.54rem;
+    right: 0;
+    height: 0.54rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+}
+.edit-arrow, .edit-arrow:after{
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+.edit-arrow{
+    border-width: 8px;
+    bottom: -2px;
+    z-index: 1;
+    right: 35%;
+    margin-left: -8px;
+    border-top-width: 0;
+    border-bottom-color: #ccc;
+}
+.edit-arrow:after{
+    content: "";
+    border-width: 7px;
+    top: 1px;
+    margin-left: -7px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #f3f3f3;
+}
+.edit-alert{
+    display: none;
+    /*padding-left: 5px;*/
+    white-space: nowrap;
+}
+.edit-alert button{
+    margin-right: 5px;
+    margin-top: 0.07rem;
+    height: 0.4rem;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.edit-alert button:first-child{
+    margin-left: 5px;
+}
+.edit-alert button:hover{
+    color: #fff;
+    background-color: #0099ff;
+}
+.edit-alert .edit-delete{
+    color: #fff;
+    background-color: #ff3333 !important;
+    border: none;
 }

@@ -8,7 +8,7 @@
             <button>发布融资需求</button>
             <button class="pro-item">财务模版下载</button>
         </div>
-        <table class="pro-table">
+        <table class="pro-table" id="pro_table">
             <tr class="pro-table-header">
                 <td>项目名称</td>
                 <td>融资金额（万）</td>
@@ -25,7 +25,17 @@
             <tr>
                 <td>抗生素研究</td><td>100</td>
                 <td>生物医药</td><td>2017-07-06</td>
-                <td><span class="demand-pass">审核通过</span></td><td><i class="pro-table-icon icon-off"></i></td>
+                <td><span class="demand-pass">审核通过</span></td>
+                <td class="pro-table-edit">
+                    <i class="pro-table-icon icon-on"></i>
+                    <div class="edit-arrow edit-alert"></div>
+                    <div class="pro-table-edit-item edit-alert">
+                        <button>编辑</button>
+                        <button>公司情况编辑</button>
+                        <button>取消</button>
+                        <button class="edit-delete">删除</button>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>疫苗研究</td><td>200</td>
@@ -50,7 +60,20 @@
             <tr class="pro-table-cancel">
                 <td>青霉素过敏研究</td><td>700</td>
                 <td>生物医药</td><td>2017-07-01</td>
-                <td>已取消</td><td><i class="pro-table-icon icon-on"></i></td>
+                <td>已取消</td><td><i class="pro-table-icon icon-off"></i></td>
+            </tr>
+            <tr>
+                <td>青霉素过敏研究</td><td>1000</td>
+                <td>生物医药</td><td>2017-07-02</td>
+                <td><span class="demand-over">投满</span></td>
+                <td class="pro-table-edit">
+                    <i class="pro-table-icon icon-on"></i>
+                    <div class="edit-arrow edit-alert"></div>
+                    <div class="pro-table-edit-item edit-alert">
+                        <button>查看</button>
+                        <button>上传财务报表</button>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>青霉素过敏研究</td><td>1000</td>
@@ -60,13 +83,16 @@
             <tr>
                 <td>青霉素过敏研究</td><td>1000</td>
                 <td>生物医药</td><td>2017-07-02</td>
-                <td><span class="demand-over">投满</span></td><td><i class="pro-table-icon icon-on"></i></td>
-            </tr>
-            <tr>
-                <td>青霉素过敏研究</td><td>1000</td>
-                <td>生物医药</td><td>2017-07-02</td>
-                <td><span class="demand-over">投满</span></td><td><i class="pro-table-icon icon-off"></i></td>
+                <td><span class="demand-over">投满</span></td>
+                <td class="pro-table-edit"><i class="pro-table-icon icon-off"></i></td>
             </tr>
         </table>
     </div>
 </div>
+<script>
+    $(function () {
+        $('#pro_table').on('click', '.icon-on',function () {
+            $(this).parent().find('.edit-alert').toggle();
+        });
+    })
+</script>
