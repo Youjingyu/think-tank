@@ -7,7 +7,7 @@
 }
 .banner > .banner-img{
     position: absolute;
-    left: -10.24rem;
+    left: 0;
     height: 3.4rem;
     font-size: 0;
     white-space: nowrap;
@@ -18,7 +18,8 @@
 }
 .banner > .banner-icon{
     position: absolute;
-    left: 48%;
+    width: 100%;
+    text-align: center;
     bottom: 0.14rem;
 }
 .banner-icon i{

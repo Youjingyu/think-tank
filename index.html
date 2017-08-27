@@ -18,11 +18,14 @@
 <div class="banner" id="banner">
     <div class="banner-img">
         <img src="img/banner.png">
+        <img src="img/sub_banner.png">
+        <img src="img/banner.png">
+        <img src="img/sub_banner.png">
         <img src="img/banner.png">
         <img src="img/sub_banner.png">
     </div>
     <div class="banner-icon">
-        <i></i>&nbsp;&nbsp;<i class="banner-active"></i>&nbsp;&nbsp;<i></i>
+        <i class="banner-active"></i>&nbsp;&nbsp;<i></i>&nbsp;&nbsp;<i></i>&nbsp;&nbsp;<i></i>&nbsp;&nbsp;<i></i>&nbsp;&nbsp;<i></i>
     </div>
 </div>
 
@@ -158,21 +161,22 @@
         var $banner = $('#banner');
         var $banner_img = $banner.find('.banner-img');
         var $banner_icon = $banner.find('i');
+        var baner_length = $banner_icon.length - 1;
         var banner_width = pxToInt(document.documentElement.style.fontSize) * 10.24;
-        var banner_index = 1;
+        var banner_index = 0;
         var bannerTimer = setTimeout(controlBanner, 2000);
-        $('#banner').find('.banner-icon').on('mouseover', 'i',function(){
+        $banner.find('.banner-icon').on('mouseover', 'i',function(){
             clearTimeout(bannerTimer);
             banner_index = $(this).index();
             $banner_img.stop(true);
             $banner_img.css('left', (0 - banner_index) * banner_width  + 'px');
             controlIcon(banner_index);
         });
-        $('#banner').find('.banner-icon').on('mouseover', 'i',function(){
+        $banner.find('.banner-icon').on('mouseover', 'i',function(){
             bannerTimer = setTimeout(controlBanner, 2000);
         });
         function controlBanner(){
-            if(banner_index === 2){
+            if(banner_index === baner_length){
                 banner_index = 0;
                 $banner_img.animate({left: '0'}, 1000, function(){
                     bannerTimer = setTimeout(controlBanner, 2000);
