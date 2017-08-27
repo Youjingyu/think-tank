@@ -244,6 +244,7 @@ a{
     height: 100%;
 }
 .header-nav-sub{
+    z-index: 1;
     position: absolute;
     display: none;
     top: 100%;
