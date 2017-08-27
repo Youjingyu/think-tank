@@ -148,14 +148,14 @@
     background-color: #17a43b;
     color: #fff;
 }
-.iinvests-news-more{
+.invests-news-more{
     float: right;
     margin-right: 0.08rem;
     cursor: pointer;
 }
 .invests-news-list-con{
     margin-top: 0.2rem;
-    color: #3333;
+    color: #333;
     line-height: 0.26rem;
 }
 .invests-news-list-con ul{
