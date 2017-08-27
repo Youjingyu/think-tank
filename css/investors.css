@@ -19,10 +19,10 @@
     font-weight: bold;
 }
 .investor-info p{
-    margin: 0.14rem 0 0.4rem;
+    margin: 0.14rem 0 0.36rem;
     text-indent: 2em;
     color: #999;
-    line-height: 100%;
+    /*line-height: 100%;*/
 }
 .investor-info span{
     display: inline-block;
