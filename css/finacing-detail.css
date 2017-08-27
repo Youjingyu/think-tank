@@ -109,12 +109,21 @@
 .company-detail .company-history{
     height: 3.28rem;
 }
+.history-line{
+    display: inline-block;
+    width: 0.6rem;
+    height: 2px;
+    vertical-align: middle;
+    background-color: #ffcc33;
+}
 .history-item{
     display: inline-block;
     position: relative;
-    margin-top: 0.4rem;
-    margin-left: 0.2rem;
+    margin-top: 0.2rem;
     text-align: center;
+}
+.history-item:first-child{
+    margin-left: 0.4rem;
 }
 .history-item span{
     color: #999;
@@ -129,13 +138,15 @@
     border-radius: 50%;
     background-color: #ccc;
     color: #333;
+    cursor: default;
 }
 .history-active{
     background-color: #ffcc33;
 }
 .history-alert{
     position: absolute;
-    bottom: 120%;
+    bottom: 140%;
+    left: -30%;
     width: 3.22rem;
     max-height: 1.16rem;
     background-color: #f1f1f1;
@@ -155,8 +166,8 @@
     border-style: solid;
 }
 .history-arrow{
-    bottom: 88%;
-    left: 50%;
+    bottom: 96%;
+    left: 20%;
     z-index: 1;
     margin-left: -11px;
     border-top-color: #ccc;
@@ -175,7 +186,13 @@
 .history-alert-2{
     left: -120%;
 }
-
 .history-arrow, .history-alert{
     display: none;
+}
+
+.history-time span{
+
+}
+.history-time span{
+    margin-left: 0.1rem;
 }
