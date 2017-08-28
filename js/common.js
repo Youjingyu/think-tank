@@ -73,27 +73,6 @@ $(function () {
                 }
             })
 
-            // 首页投资机构滚动banner逻辑
-            $('#investor_left').on('click', function () {
-                var $investor_banner = $('#investor_banner');
-                var item_width = 2.4 * pxToInt(document.documentElement.style.fontSize);
-                var cur_margin = pxToInt($investor_banner.css('margin-left'));
-                if(cur_margin < 0){
-                    $investor_banner.css('margin-left', (cur_margin + item_width) + 'px');
-                }
-            });
-            $('#investor_right').on('click', function () {
-                var $investor_banner = $('#investor_banner');
-                var item_width = 2.4 * pxToInt(document.documentElement.style.fontSize);
-                var cur_margin = pxToInt($investor_banner.css('margin-left'));
-                if((0 - cur_margin) < ($('.investor-item').length - 3) * item_width){
-                    $investor_banner.css('margin-left', (cur_margin - item_width) + 'px');
-                }
-            });
-            function pxToInt(px) {
-                return parseFloat(px.replace('px', ''));
-            }
-
             // 页面翻页逻辑
             var $page = $('.page');
             var $pageList = $page.find('li');

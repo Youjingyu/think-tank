@@ -88,6 +88,22 @@
                     <img src="img/sub_img_tz05.png">
                     <div>易贷网-快捷方便你的选择！</div>
                 </div>
+                <div class="investor-item">
+                    <img src="img/sub_img_tz01.png">
+                    <div>易贷网-快捷方便你的选择！</div>
+                </div>
+                <div class="investor-item">
+                    <img src="img/sub_img_tz02.png">
+                    <div>中国最早的网络借贷信息平台</div>
+                </div>
+                <div class="investor-item">
+                    <img src="img/sub_img_tz03.png">
+                    <div>让企业的融资更快、更简单</div>
+                </div>
+                <div class="investor-item">
+                    <img src="img/sub_img_tz04.png">
+                    <div>易贷网-快捷方便你的选择！</div>
+                </div>
             </div>
         </div>
         <i class="investor-right" id="investor_right"></i>
@@ -158,6 +174,8 @@
         setTimeout(function () {
             $('.not-index-banner, .crumbs').remove()
         }, 500);
+
+        // banner控制
         var $banner = $('#banner');
         var $banner_img = $banner.find('.banner-img');
         var $banner_icon = $banner.find('i');
@@ -193,6 +211,39 @@
             $banner.find('.banner-active').removeClass('banner-active');
             $banner_icon.eq(banner_index).addClass('banner-active');
         }
+
+        // 投资机构滚动控制
+        (function () {
+            var $investor_banner = $('#investor_banner');
+            var investor_item = $investor_banner.find('.investor-item');
+            var len = investor_item.length;
+            var margin_left = 0 - (2.4 * len + 0.245 * (len - 1) - 9.357) * pxToInt(document.documentElement.style.fontSize);
+            var left_slide = true;
+            startAnimate();
+            $investor_banner.on('mouseover', function () {
+                $investor_banner.stop(true);
+            });
+            $investor_banner.on('mouseout', function () {
+                startAnimate();
+            })
+            $('#investor_left').on('click', function () {
+                $investor_banner.stop(true);
+                left_slide = true;
+                startAnimate();
+            });
+            $('#investor_right').on('click', function () {
+                $investor_banner.stop(true);
+                left_slide = false;
+                startAnimate();
+            });
+            function startAnimate() {
+                $investor_banner.animate({'marginLeft': left_slide ?  margin_left + 'px': 0}, 20000, 'linear', function () {
+                    left_slide = !left_slide;
+                    startAnimate();
+                });
+            }
+        })();
+
         function pxToInt(px) {
             return parseFloat(px.replace('px', ''));
         }
