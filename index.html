@@ -227,17 +227,23 @@
                 startAnimate();
             })
             $('#investor_left').on('click', function () {
-                $investor_banner.stop(true);
-                left_slide = true;
-                startAnimate();
+                if(left_slide === false){
+                    $investor_banner.stop(true);
+                    left_slide = true;
+                    startAnimate();
+                }
             });
             $('#investor_right').on('click', function () {
-                $investor_banner.stop(true);
-                left_slide = false;
-                startAnimate();
+                if(left_slide === true){
+                    $investor_banner.stop(true);
+                    left_slide = false;
+                    startAnimate();
+                }
             });
             function startAnimate() {
-                $investor_banner.animate({'marginLeft': left_slide ?  margin_left + 'px': 0}, 20000, 'linear', function () {
+                var ratio = pxToInt($investor_banner.css('marginLeft')) / margin_left;
+                var time = (left_slide ? (1 - ratio) : ratio) * 20000;
+                $investor_banner.animate({'marginLeft': left_slide ?  margin_left + 'px': 0}, time, 'linear', function () {
                     left_slide = !left_slide;
                     startAnimate();
                 });
